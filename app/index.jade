@@ -1,0 +1,95 @@
+doctype html
+html(lang='us')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title Angular BootCamp Academy Pokedex Challenge
+        link(href='styles/all.min.css', rel='stylesheet')
+        link(href='styles/main.min.css', rel='stylesheet')
+    body
+
+        //Description Menu
+
+        div.container-fluid.top
+            div.row
+                div.col-xs-12
+                    div.navbar-header.pagination-centered.text-center
+                        a.navbar-brand.backButton(href='#')
+                            i.fa.fa-chevron-left(aria-hidden='true')
+                        h1.navbar-text Description
+
+
+        //Description Section
+
+        div.container-fluid
+            div.row
+                div.col-xs-5.pokeImg
+                    img.img-responsive.img-rounded.pull-left(src='images/bulbasaur.jpg', alt='Bulbasaur')
+                div.col-xs-7
+                    div.row.title
+                        div.col-xs-9.noPadding
+                            h2 #001 Bulbasaur
+                        div.col-xs-3.noPadding.icons
+                            img.pull-left.img-responsive(src='images/pokeball.png', alt='pokeball')
+                            img.pull-left.img-responsive(src='images/starIcon.png', alt='star-icon')
+                        div.col-xs-12.noPadding.info
+                            ul.list-inline
+                                li: h3 0.7m,
+                                li: h3 6.9kg
+                        div.col-xs-12.desc.noPadding
+                            p Bulbasaur is a small, quadruped Pokémon that has blue-green skin with darker green patches
+                             |it has red eyes with white pupils and pointed, ear-like structures on top of its head
+                        div.col-xs-12.noPadding
+                            span.label.label-default.grass Grass
+                            span.label.label-default.bug Bug
+                            span.label.label-default.poison Poison
+
+        //General Information Section
+
+        div.container-fluid.noPadding.grlDesc
+            div.row
+                div.col-xs-12
+                    div.panel.panel-default
+                        div.panel-heading
+                            h3.panel-title General Information
+                        table.table
+                            tbody
+                                tr
+                                  td: b.descTitle Hidden Abilities
+                                  td Clorophyll, Overgrow
+                                tr
+                                  td: b.descTitle Where to Found
+                                  td Luminoise City
+                    div.panel.panel-default
+                        div.panel-heading
+                            h3.panel-title Evolutions
+                         table.table
+                             tbody
+                                 tr
+                                    td.noPadding: div.row
+                                            div.col-xs-5.noPadding
+                                                img.img-responsive.evoImg(src='images/ivysaur.jpg' alt='ivysaur')
+                                            div.col-xs-5.noPadding
+                                                h5.evoName Ivysaur
+                                                    span.evoLvl @ LV.16
+                                                span.label.label-default.grass Grass
+                                                span.label.label-default.poison Poison
+                                                span.label.label-default.bug Bug
+                                            div.col-xs-1.noPadding.pokeNum #002
+                                 tr
+                                     td.noPadding: div.row
+                                         div.col-xs-5.noPadding
+                                             img.img-responsive.evoImg(src='images/venusaur.jpg' alt='ivysaur')
+                                         div.col-xs-5.noPadding
+                                             h5.evoName Venusaur
+                                                 span.evoLvl @ LV.32
+                                             span.label.label-default.grass Grass
+                                             span.label.label-default.poison Poison
+                                             span.label.label-default.bug Bug
+                                         div.col-xs-1.noPadding.pokeNum #003
+
+        //Scripts & Other Fun Stuff
+        script(src='scripts/all.min.js')
+        script(src='scripts/app.min.js')
+
