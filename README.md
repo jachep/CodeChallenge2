@@ -1,5 +1,5 @@
 
-﻿# Hi, Welcome to Pokedex Challenge Part 2
+# Hi, Welcome to Pokedex Challenge Part 2
 
 
 # Hola, Bienvenido a el Desafío Pokedex Parte 2 !!
